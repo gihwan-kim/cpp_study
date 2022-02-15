@@ -1,6 +1,6 @@
 # 객체를 사용하기 전에 객체를 초기화하기
 
-> 데이터의 종류에 따라 초기화를 하지 않으면 알아서 초기화해주는 경우도 있고 
+> 데이터의 종류에 따라 초기화를 하지 않으면 알아서 초기화해주는 경우도 있고
 > 초기화하지 않는 경우도 있다.
 
 - 모든 객체를 사용하기전에 항상 초기화해주는 게 좋다.
@@ -56,11 +56,16 @@ ClassName::ClassName(val1, val2, val3)
 
 ### static object 의 종류
 
-1. 전역 객체                                        : non-local static object
-2. 네임스페이스 유효범위에서 정의된 객체            : non-local static object
-3. class 안에서 static 으로 선언된 객체             : non-local static object
-4. 함수안에서 static 으로 선언된 객체               : local static object
-5. 파일 유효범위 안에서 static 으로 정의된 객체     : non-local static object
+1. 전역 객체
+    > : non-local static object
+2. 네임스페이스 유효범위에서 정의된 객체
+    > : non-local static object
+3. class 안에서 static 으로 선언된 객체
+    > : non-local static object
+4. 함수안에서 static 으로 선언된 객체
+    > : local static object
+5. 파일 유효범위 안에서 static 으로 정의된 객체
+    > : non-local static object
 
 
 ### translation unit (= 번역 단위)
@@ -72,7 +77,7 @@ ClassName::ClassName(val1, val2, val3)
 
 ### non-lcoal static object 의 문제점
 - 별도로 컴파일 된 소스파일이 두개 이상있고 각 소스파일에 non-local static object 가 있는 상황인 경우
-- non-local static object 의 초기화 순서를 모르기 대문에 한쪽에서 다른 쪽을 사용할 경우 초기화되어있지 
+- non-local static object 의 초기화 순서를 모르기 대문에 한쪽에서 다른 쪽을 사용할 경우 초기화되어있지
     않을때 에러가 발생할 수 있다.
 
 

@@ -1,4 +1,6 @@
 
+- multimap 과 map 혼동하지 말자.
+> key 의 중복을 허용 : multimap
 
 
 ```
